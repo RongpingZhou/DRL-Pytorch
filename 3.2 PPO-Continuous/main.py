@@ -11,16 +11,19 @@ from PPO import PPO_agent
 '''Hyperparameter Setting'''
 parser = argparse.ArgumentParser()
 parser.add_argument('--dvc', type=str, default='cuda', help='running device: cuda or cpu')
-parser.add_argument('--EnvIdex', type=int, default=0, help='PV1, Lch_Cv2, Humanv4, HCv4, BWv3, BWHv3')
+# parser.add_argument('--EnvIdex', type=int, default=0, help='PV1, Lch_Cv2, Humanv4, HCv4, BWv3, BWHv3')
+parser.add_argument('--EnvIdex', type=int, default=4, help='PV1, Lch_Cv2, Humanv4, HCv4, BWv3, BWHv3')
 parser.add_argument('--write', type=str2bool, default=False, help='Use SummaryWriter to record the training')
-parser.add_argument('--render', type=str2bool, default=False, help='Render or Not')
+# parser.add_argument('--render', type=str2bool, default=False, help='Render or Not')
+parser.add_argument('--render', type=str2bool, default=True, help='Render or Not')
 parser.add_argument('--Loadmodel', type=str2bool, default=False, help='Load pretrained model or Not')
 parser.add_argument('--ModelIdex', type=int, default=100, help='which model to load')
 
 parser.add_argument('--seed', type=int, default=0, help='random seed')
 parser.add_argument('--T_horizon', type=int, default=2048, help='lenth of long trajectory')
 parser.add_argument('--Distribution', type=str, default='Beta', help='Should be one of Beta ; GS_ms  ;  GS_m')
-parser.add_argument('--Max_train_steps', type=int, default=int(5e7), help='Max training steps')
+# parser.add_argument('--Max_train_steps', type=int, default=int(5e7), help='Max training steps')
+parser.add_argument('--Max_train_steps', type=int, default=int(5e5), help='Max training steps')
 parser.add_argument('--save_interval', type=int, default=int(5e5), help='Model saving interval, in steps.')
 parser.add_argument('--eval_interval', type=int, default=int(5e3), help='Model evaluating interval, in steps.')
 
@@ -42,7 +45,8 @@ print(opt)
 
 
 def main():
-    EnvName = ['Pendulum-v1','LunarLanderContinuous-v2','Humanoid-v4','HalfCheetah-v4','BipedalWalker-v3','BipedalWalkerHardcore-v3']
+    # EnvName = ['Pendulum-v1','LunarLanderContinuous-v2','Humanoid-v4','HalfCheetah-v4','BipedalWalker-v3','BipedalWalkerHardcore-v3']
+    EnvName = ['Pendulum-v1','LunarLanderContinuous-v3','Humanoid-v5','HalfCheetah-v5','BipedalWalker-v3','BipedalWalkerHardcore-v3']
     BrifEnvName = ['PV1', 'LLdV2', 'Humanv4', 'HCv4','BWv3', 'BWHv3']
 
     # Build Env
