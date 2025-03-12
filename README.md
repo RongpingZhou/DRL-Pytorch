@@ -75,10 +75,19 @@ For more details, please check the **README.md** file in the corresponding algor
 </div>
 <br/>
 
-+ [Sparrow](https://github.com/XinJingHao/Sparrow-V1) (Light Weight Simulator for Mobile Robot; DRL friendly):
++ [Sparrow](https://github.com/XinJingHao/Sparrow-V2) (Light Weight Simulator for Mobile Robot; DRL friendly):
 <div align="left">
-<img width="60%" height="auto" src="https://github.com/XinJingHao/Images/blob/main/Sparrow_V1/render.gif">
+<img width="62%" height="auto" src="https://github.com/XinJingHao/Images/blob/main/Sparrow_V1/render.gif">
 </div>
+
+<p align="left">
+  <img src="https://github.com/XinJingHao/Images/blob/main/Sparrow_V2/case_v2.gif" width="10%" height="auto"  />
+  <img src="https://github.com/XinJingHao/Images/blob/main/Sparrow_V2/case2.gif" width="10%" height="auto" />
+  <img src="https://github.com/XinJingHao/Images/blob/main/Sparrow_V2/play.gif" width="10%" height="auto" />
+  <img src="https://github.com/XinJingHao/Images/blob/main/Sparrow_V3/N1.gif" width="10%" height="auto" />
+  <img src="https://github.com/XinJingHao/Images/blob/main/Sparrow_V3/N3.gif" width="10%" height="auto" />
+  <img src="https://github.com/XinJingHao/Images/blob/main/Sparrow_V3/N10.gif" width="10%" height="auto" />
+</p>
 
 <br/>
 
@@ -143,6 +152,8 @@ TD3: [Fujimoto S, Hoof H, Meger D. Addressing function approximation error in ac
 SAC: [Haarnoja T, Zhou A, Abbeel P, et al. Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor[C]//International conference on machine learning. PMLR, 2018: 1861-1870.](https://proceedings.mlr.press/v80/haarnoja18b)
 
 ASL: [Train a Real-world Local Path Planner in One Hour via Partially Decoupled Reinforcement Learning and Vectorized Diversity](https://arxiv.org/abs/2305.04180)
+
+ColorDynamic: [Generalizable, Scalable, Real-time, End-to-end Local Planner for Unstructured and Dynamic Environments](https://arxiv.org/abs/2502.19892)
 
 <br/>
 
